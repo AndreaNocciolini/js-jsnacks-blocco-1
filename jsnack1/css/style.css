@@ -21,4 +21,5 @@
     width: 40%;
     background-image: linear-gradient(to right top, #093532, #003135, #002c38, #002739, #002138, #002036, #001e35, #001d33, #002031, #00222d, #002328, #042423);
     color: white;
+    padding: 1em;
 }
