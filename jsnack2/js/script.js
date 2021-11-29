@@ -7,18 +7,32 @@ const nameUser = prompt(`Insert your name`);
 // console.log(namesArray);
 
 
-let invite = false;
-for (let i = 0; i < namesArray.length; i++) {
-    const element = namesArray[i];
-    console.log(element);
+// let invite = false;
+// for (let i = 0; i < namesArray.length; i++) {
+//     const element = namesArray[i];
+//     console.log(element);
 
+//     if (nameUser == element) {
+//         invite = true;
+//     }
+//     console.log(invite)
+// }
+let invite;
+let i = 0
+while (i <= namesArray.length - 1) {
+    let element = namesArray[i];
+    console.log(element)
     if (nameUser == element) {
         invite = true;
     }
-    console.log(invite)
+    else {
+        
+    }
+    console.log(invite);
+    i++;
 }
 
-// console.log(invite)
+console.log(invite);
 
 
 if (invite) {
