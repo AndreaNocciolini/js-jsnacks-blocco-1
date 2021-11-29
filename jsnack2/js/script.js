@@ -3,6 +3,8 @@
 const container = document.querySelector(`.container`);
 const namesArray = [`Francis Scott Fitzgerald`, `Zelda Sayre Fitzgerald`, `Nick Carraway`, `Daisy Buchanan`, `Jordan Baker`, `Myrtle Wilson`];
 const nameUser = prompt(`Insert your name`);
+
+//******************FOR*****************/
 // console.log(nameUser);
 // console.log(namesArray);
 
@@ -17,23 +19,21 @@ const nameUser = prompt(`Insert your name`);
 //     }
 //     console.log(invite)
 // }
+//******************FOR*****************/
+
 let invite;
 let i = 0
 while (i <= namesArray.length - 1) {
-    let element = namesArray[i];
-    console.log(element)
-    if (nameUser == element) {
+    let element = namesArray[i].toLowerCase();
+
+    if (nameUser.toLowerCase() == element) {
         invite = true;
     }
     else {
         
     }
-    console.log(invite);
     i++;
 }
-
-console.log(invite);
-
 
 if (invite) {
     container.innerHTML = `Welcome, ${nameUser}!`
